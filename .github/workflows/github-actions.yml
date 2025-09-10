@@ -20,7 +20,7 @@ jobs:
 
       - name: Push Docker image
         run : |
-          docker tag house-predictor ${{ secrets.DOCKER_USERNAME }}/house-price-pred:latest
+          docker tag house-price-pred ${{ secrets.DOCKER_USERNAME }}/house-price-pred:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/house-price-pred:latest
 
 
