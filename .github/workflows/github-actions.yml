@@ -33,4 +33,4 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/house-price-pred:latest
             docker stop house-price-pred || true
             docker rm house-price-pred || true
-            docker run -d --name house-price-pred -p 80:80 ${{ secrets.DOCKER_USERNAME }}/house-price-pred:latest
+            docker run -d --name house-price-pred -p 80:8000 ${{ secrets.DOCKER_USERNAME }}/house-price-pred:latest
